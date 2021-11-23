@@ -1,0 +1,61 @@
+.first{
+    width: 90%;
+    max-width: 1200px;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-radius: 20px;;
+    margin-top:15em;
+  
+    & .span_erori{
+        color:white;
+        & ul{
+            list-style: none;
+            display: none;
+        }
+    }
+    & .container-label{
+    display: flex;
+    flex-direction: column;
+        row-gap: 20px;
+        width: 80%;
+        margin-left:2em;
+       & input{
+        height: 40px;
+       }
+       & label{
+           color:white;
+           font-size: 30px;
+       }
+    }
+    & section{
+        width: 80%;
+        margin-left:2em;
+        margin-top:2em;
+
+        @include flexy($dir:column);
+        row-gap: 25px;
+        & button{
+          background-color: white;;
+          border-radius: 10px;
+          border:none;
+          font-size: 25px;
+          color:#e66465;
+          text-transform: uppercase;
+        }
+    }
+    & .update{
+        border:1px solid red;
+    }
+    .create{
+        background-color: white;;
+        border-radius: 10px;
+        border:none;
+        font-size: 25px;
+        color:#e66465;
+        text-transform: uppercase;
+        display: block;
+    }
+   
+}
+
